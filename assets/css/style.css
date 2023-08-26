@@ -1,0 +1,37 @@
+/* margin horizontal is your worst enemy */
+/* widths should be defined as % whenever possible, remember the default is 100% (unless it's flexbox)*/
+
+
+header{
+    background-color: blue;
+    padding: 10px;
+    display:flex;
+    justify-content: space-between;
+}
+/* in a flex container, the children CHOOSE the smallest possible width, but 100% of the height */
+h1{
+    background-color: red;
+    width: 35%
+}
+
+nav {
+    background-color: green;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+@media screen and (max-width: 600px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        width: 50%;
+        margin-bottom: 5px;
+    }
+    nav{
+        width: 80%;
+    }
+}
