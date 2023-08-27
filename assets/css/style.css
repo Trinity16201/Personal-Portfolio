@@ -2,36 +2,58 @@
 /* widths should be defined as % whenever possible, remember the default is 100% (unless it's flexbox)*/
 
 
-header{
-    background-color: blue;
-    padding: 10px;
-    display:flex;
-    justify-content: space-between;
+:root {
+    --Amarenth: #E52B50;
+    --Tyrian: #4D0033;
+    --Ghost: #F8F8FF
 }
+body {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   background-image: linear-gradient(#2b2528, #DBBDCA);
+}
+
 /* in a flex container, the children CHOOSE the smallest possible width, but 100% of the height */
-h1{
-    background-color: red;
-    width: 35%
+h1 {
+box-sizing: border-box;
+font-size: 500%;
+color:var(--Ghost);
+text-shadow: -1px 2px 2px #F7ADBC;
+background-image: linear-gradient(#800055, #FF80D5 );
+text-align: center;
+border: black;
+border-style: solid;
+margin: 3%;
 }
 
-nav {
-    background-color: green;
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
+.header ul li{
+    display:inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10%;
+    font-size: 120%;
+    
+}
+a:hover, a:active {
+  background-color: rgb(184, 164, 164);
+}
+.card {
+    background-color: var(--Ghost);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  h2 {
+    font-size: 150%;
+    font-style: italic;
+    text-decoration: underline;
+
 }
 
-
-@media screen and (max-width: 600px) {
-    header{
-        flex-direction: column;
-        align-items: center;
-    }
-    h1{
-        width: 50%;
-        margin-bottom: 5px;
-    }
-    nav{
-        width: 80%;
-    }
-}
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  a:hover, a:active {
+    background-color: rgb(184, 164, 164);
+  }
