@@ -10,36 +10,43 @@
 </head>
 
 <body>
-    <header>
-        <h1>Sarah Leder</h1>
-    </header>
+    <header class="header">
+        <nav class="name">
+            <h1>Sarah Leder </h1>
         <nav>
-            <a href="#">About Me</a>
-            <a href="#">First Mini Project</a>
-            <a href="#">SEO Challenge</a>
-            <a href="#">Password Generator</a>
+            <ul>
+                <li><a href="#AboutMe">About Me</a>
+                </li>
+                <li><a href="#First">First Mini Project</a>
+                </li>
+                <li><a href="#SEO">SEO Challenge</a>
+                </li>
+                <li><a href="#Password">Password Generator</a>
+                </li>
+            </ul>
         </nav>
-
+    </header> <br>
      
-        <section class="Details">   
-            <aside>
-              <h2> About Me </h2>
-              <img src="./assets/css/Images/Profile.jpg"/>
-              <p> I've been in the veterinary industry for over 16 years working in both practice and reference laboratories. In August 2023, I began a new journey into computer coding and this webpage serves as a location for all of my work.</p>
-    
-            </aside>
+    <main class="#grad">
+        <div class="card" id="#AboutMe">
+            <h2> About Me </h2>   
+              <h3>I've been in the veterinary industry for over 16 years working in both practice and reference laboratories. In August 2023, I began a new journey into computer coding and this webpage serves as a location for all of my work.</h3>
+              <img src="./assets/css/Images/Profile.jpg" alt="Sarah" style="width:100%">
+              <p class="title">Computer Programmer</p>
+              <p>Ohio State University</p>
+        </div>
 
             <div class= "Work">
-                <section class="FirstMini">
-                    <div class="Centered"> First Mini Project</div>
-                    <img src="./assets/css/Images/BusyStreets.jpg" alt="Painting with vertical stripes" />
+                <figure class="First Mini Project">
+                    <div class="centered"> First Mini Project</div>
+                    <img src="./assets/css/Images/BusyStreets.jpg" style="width: 200px; height:200px" alt="Painting with vertical stripes" />
                     
-                </section>
+                </figure>
             </div>
-            
+
 
        </section> 
-
+    </main>
 </body>
 
 </html>
