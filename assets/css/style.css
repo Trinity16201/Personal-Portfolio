@@ -7,71 +7,88 @@
     --Tyrian: #4D0033;
     --Ghost: #F8F8FF
 }
+
 body {
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   background-color: #ECD8ED;
-   margin: 2%;
-   flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ECD8ED;
+    margin: 2%;
+    flex-direction: column;
 }
 
-/* in a flex container, the children CHOOSE the smallest possible width, but 100% of the height */
 h1 {
-box-sizing: border-box;
-font-size: 500%;
-color:var(--Ghost);
-text-shadow: -1px 2px 2px #F7ADBC;
-background-image: linear-gradient(#800055, #FF80D5 );
-text-align: center;
-border: black;
-border-style: solid;
-margin: 3%;
+    box-sizing: border-box;
+    font-size: 500%;
+    color: var(--Ghost);
+    text-shadow: -1px 2px 2px #F7ADBC;
+    background-image: linear-gradient(#800055, #FF80D5);
+    text-align: center;
+    border: black;
+    border-style: solid;
+    margin: 3%;
 }
 
-.header ul li{
-    display: inline-block;
-    flex-direction: row;
-    margin-left: 10%;
-    font-size: 100%;
-    
+.header nav ul li {
+    display: inline-flex;
+    justify-content: space-around;
+    margin-left: 10%; 
+    /* Play around with the margin, maybe do a margin-left and margin-right */
+    font-size: 15px;
+
 }
-a:hover, a:active {
-  background-color: rgb(184, 164, 164);
+
+.header nav ul {
+    display: flex;
+    justify-content: center;
 }
+
+a:hover,
+a:active {
+    background-color: rgb(184, 164, 164);
+}
+
 .card {
     background-color: var(--Ghost);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    justify-content: center;
     max-width: 300px;
     margin: auto;
-    text-align: center;
-  }
-  h2 {
+    padding: 5px;
+}
+
+h2 {
     font-size: 150%;
     font-style: italic;
     text-decoration: underline;
 
 }
 
-  .title {
+.title {
     color: grey;
     font-size: 18px;
-  }
-  a:hover, a:active {
+}
+
+a:hover,
+a:active {
     background-color: rgb(184, 164, 164);
-  }
-  .container {
+}
+
+.container {
     position: relative;
     text-align: center;
     color: white;
     font-size: 50px;
     margin-bottom: 10px;
-  }
-  .centered {
+    flex-direction: row;
+}
+
+.centered {
     position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  img {
+}
+
+img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -79,16 +96,24 @@ a:hover, a:active {
     height: auto;
     border: black;
     border-style: groove;
-    padding: 3px;
-  }
-
-  .grid-container > div {
+    padding: 3px
+}
+img:hover {
+    box-shadow: 
+    0 0 90px var(--Amarenth)
+}
+.grid-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     height: 100px;
     align-content: space-evenly;
     grid-template-columns: auto auto auto;
     gap: 10px;
-    padding: 10px;
-  }
+    
+}
+
+.form {
+    display: center;
+}
