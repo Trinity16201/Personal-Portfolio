@@ -27,23 +27,19 @@ h1 {
     margin: 3%;
 }
 
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .header nav ul li {
     display: inline-flex;
     justify-content: space-around;
-    margin-left: 10%; 
+    /*margin*/
     /* Play around with the margin, maybe do a margin-left and margin-right */
     font-size: 15px;
 
-}
-
-.header nav ul {
-    display: flex;
-    justify-content: center;
-}
-
-a:hover,
-a:active {
-    background-color: rgb(184, 164, 164);
 }
 
 .card {
@@ -65,11 +61,6 @@ h2 {
 .title {
     color: grey;
     font-size: 18px;
-}
-
-a:hover,
-a:active {
-    background-color: rgb(184, 164, 164);
 }
 
 .container {
@@ -98,22 +89,72 @@ img {
     border-style: groove;
     padding: 3px
 }
+
 img:hover {
-    box-shadow: 
-    0 0 90px var(--Amarenth)
+    box-shadow:
+        0 0 90px var(--Amarenth)
 }
+
 .grid-container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
     flex-wrap: wrap;
     justify-content: center;
     height: 100px;
     align-content: space-evenly;
     grid-template-columns: auto auto auto;
-    gap: 10px;
-    
+    padding: 5px;
+
 }
 
-.form {
-    display: center;
+form {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: #4D0033;
+    border-style: groove;
+    padding: 15px;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 868px) {
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .container {
+            flex: 2 1 200px;
+            font-size: 35px;
+        }
+
+        /*.grid-container {
+            flex-direction: column;
+        }*/
+    }
+}
+
+@media screen and (max-width: 568px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        flex: 2 1 200px;
+        font-size: 20px;
+    }
+
+    /*.grid-container {
+        flex-;
+    }*/
 }
