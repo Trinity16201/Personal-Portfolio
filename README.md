@@ -5,4 +5,6 @@ Throughout this, I've learned much more about starting code from scratch and edi
 
 Website can be found here: https://trinity16201.github.io/Personal-Portfolio/
 
+[Video of Page](<../../../../Pictures/Sarah Portfolio Page.webm>)
+
 
